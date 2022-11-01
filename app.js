@@ -25,98 +25,85 @@ for (let i=1; i<=100;i++){
     
     }
 }
-
-// Exercise 2 Section
-console.log("EXERCISE 2:\n==========\n");
-
-for (let i = 1; i <= 100; i++) {
-   let output = "";
-
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log(i, "FIZZBUZZ");
-    } else if (i % 3 == 0) {
-        console.log(i, "FIZZ");
-    } else if (i % 5 == 0) {
-        console.log(i, "BUZZ");
+for (let num = 1; num <= 100; num++) {
+    if (num % 2 == 1) {
+      console.log(num + " Odd");
     }
-}
-// exercise 3 //
-
-
-let whileI = 0
-
-while (whileI <= end) {
-    if (i % 2 == 1) {
-        console.log(whileI, "odd");
+  }
+  console.log("EXERCISE 2:\n==========\n");
+  for (let num = 1; num <= 100; num++) {
+    if (num % 3 == 0 && num % 5 == 0) {
+      console.log(num + " FIZZBUZZ");
+    } else if (num % 3 == 0) {
+      console.log(num + " FIZZ");
+    } else if (num % 5 == 0) {
+      console.log(num + " BUZZ");
     }
-
-    whileI++;
-}
-let doWhileI = 0;
-
-do {
-    if (doWhileI % 2 == 1) {
-        console.log(doWhileI, "odd");
+  }
+  console.log("EXERCISE 3:\n==========\n");
+  let num = 1;
+  while (num <= 100) {
+    if (num % 2 != 0) {
+      console.log(num++ + " Odd");
+      continue;
+    }if (num % 2 == 0) {
+      num++;
     }
-    doWhileI++;
-}  while (doWhileI <= end); {
-
-
-
-
-         if (i % 2 == 0) 
-        console.log(Number= " +i)");
-        console.log(doWhileI, "even");
-}
-
-
-// exercise 4 //
-
-let value = Math.round(Math.random() * 500);
-let n = Math.round(Math.random() * (500 - 100) + 100);
-let foundValue = false;
-
-for (let num = 0; num <= n; num++) {
-    if (num == value) {
-        console.log("Found Value");
-        break;
+  }
+  num = 0;
+  do {
+    if (num % 2 != 0) {
+      console.log(num++ + " Odd");
+      continue;
+    }if (num % 2 == 0) {
+      num++;
     }
-
-if (foundValue) console.log("Didn't find value");
-}
-
-
-// exercise 5 //
-
-
-let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-n = Math.round(Math.random() * (1000 - 1) + 1);
-start = Math.round(Math.random() * (10 - 1) + 1);
-
-for (let i = start; i <= n; i++) {
-    if (i % fizzDivisor == 0 && i % buzzDivisor == 0) {
-        console.log(i, "FIZZBUZZ");
-    } else if (i % fizzDivisor == 0) {
-        console.log(i, "FIZZ");
-    } else if (i % buzzDivisor == 0) {
-
+  } while (num <= 100);
+  num = 1;
+  while (num <= 100) {
+    if (num % 3 == 0 && num % 5 == 0) {
+      console.log(num + " FIZZBUZZ");
+      num++;
+    } if (num % 3 == 0) {
+      console.log(num + " FIZZ");
+      num++;
+    }if (num % 5 == 0) {
+      console.log(num + " BUZZ");
+      num++;
+    }if (num % 3 != 0 || num % 5 != 0) {
+      num++;
     }
-}
-
-let doWhileF = start;
-
-do {
-    let output = "";
-
-    if (doWhileF % 3 == 0) {
-        output += "FIZZ";
+  }
+  num = 1;
+  do {
+    if (num % 3 == 0 && num % 5 == 0) {
+      console.log(num + " FIZZBUZZ");
+      num++;
+    }if (num % 3 == 0) {
+      console.log(num + " FIZZ");
+      num++;
+    }if (num % 5 == 0) {
+      console.log(num + " BUZZ");
+      num++;
+    }if (num % 3 != 0 || num % 5 != 0) {
+      num++;
     }
-    
-    if (doWhileF % 5 == 0) {
-        output += "BUZZ";
-    }
-    output && console.log(doWhileF, output);
+  } while (num <= 100);
 
-    doWhileF++;
-} while (doWhileF <= end);
+
+
+  console.log("EXERCISE 4:\n==========\n");
+  
+  let value = Math.round(Math.random() * 500);
+  let n = Math.round(Math.random() * (500 - 100) + 100);
+  if (value > n) {
+    console.log("Did not find value");
+  }
+  for (let m = 0; m != n; m++) {
+    if (m == value) {
+      console.log(m + " Found value!");
+      break;
+    }
+  }
+  
+      
