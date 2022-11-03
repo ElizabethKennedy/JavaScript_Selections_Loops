@@ -106,4 +106,22 @@ for (let num = 1; num <= 100; num++) {
     }
   }
   
+
+  console.log("EXERCISE 5:\n==========\n");
+
+  let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+  let gameStart = Math.round(Math.random() * (10 - 1) + 1);
+  let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+  let gameEnd = Math.round(Math.random() * (1000 - 1) + 1);
+    for(i = gameStart; i <= gameEnd; i++){
+      if(i % fizzDivisor == 0 && i % buzzDivisor == 0){
+        console.log("FIZZBUZZ");
+    }
+    else if (i % fizzDivisor == 0){
+        console.log("FIZZ");
+    }
+    else if(i % buzzDivisor == 0){
+        console.log("BUZZ");
+    }
+}
       
