@@ -33,7 +33,7 @@ while(i <=100) {
 
 
 // Exercise 2 Section	// Exercise 2 Section
-console.log("EXERCISE 2:\n==========\n");	console.log("EXERCISE 2:\n==========\n");
+console.log("EXERCISE 2:\n==========\n");
 
 for(i = 1; i <=100; i++) {
     if (i % 3 + i % 5 == 0) {
